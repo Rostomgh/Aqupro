@@ -12,20 +12,20 @@ class CustomContainer extends StatelessWidget {
     return InkWell(
       onTap:tap ,
       child: Container(
-        height:300,
-        width:double.infinity,
+        height:160,
+        width:120,
         decoration: BoxDecoration(
           border: Border.all(
-            color: const Color.fromARGB(115, 65, 60, 60),
+            color: Colors.black,
           ),
-          borderRadius: BorderRadius.circular(5),
+          borderRadius: BorderRadius.circular(7),
           color: const Color.fromARGB(255, 255, 255, 255),
         ),
         child: Column(
           children: [
             Image.asset(image),
             const SizedBox(height: 9),
-            Text(text, textDirection: TextDirection.rtl,style: const TextStyle(fontSize: 30,fontWeight: FontWeight.bold),),
+            Text(text, textDirection: TextDirection.rtl,),
           ],
         ),
       ),

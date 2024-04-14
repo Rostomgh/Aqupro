@@ -13,18 +13,23 @@ class CustomCardInfo extends StatelessWidget {
         child: ListTile(
           title: Text(
             "Aquapro Pay",
-            style: TextStyle(color: Colors.white),
+            style: TextStyle(color: Colors.white,fontSize: 17),
           ),
-          subtitle: Row(
-            children: [
-              Icon(Icons.remove_red_eye_sharp, color: Colors.white),
-              SizedBox(width: 5),
-              Text(
-                "0 DZD",
-                style: TextStyle(color: Colors.white, fontSize: 18),
-              ),
-            ],
+          
+          subtitle: SizedBox(
+            height: 50,
+            child: Row(
+              children: [
+                Icon(Icons.remove_red_eye_sharp, color: Colors.white),
+                SizedBox(width: 5),
+                Text(
+                  "0 DZD",
+                  style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
+              ],
+            ),
           ),
+          
           trailing: Trailing(),
         ),
       ),

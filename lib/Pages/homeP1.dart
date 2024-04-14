@@ -2,7 +2,6 @@ import 'package:aquapro/Compo/CardInfo.dart';
 import 'package:aquapro/Compo/Constance.dart';
 import 'package:aquapro/Compo/Container.dart';
 
-import 'package:aquapro/Compo/Trailing.dart';
 import 'package:aquapro/Login/Login.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -37,7 +36,7 @@ class Homm extends StatelessWidget {
       ),
       body:  SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: const EdgeInsets.all(7.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -55,11 +54,30 @@ class Homm extends StatelessWidget {
                 "Nous sommes la pour te rendre la vie facile . ",
                 style: TextStyle(fontSize: 16, fontWeight: FontWeight.w300),
               ),
-              const SizedBox(height: 20),
-              CustomContainer(image: "assets/img/setern.png",text: "خزان ماء 800 لتر",tap: (){},),
-              SizedBox(height: 16),
-              CustomContainer(image: "assets/img/setern.png",text: "خزان ماء 1000 لتر",tap: (){},),
-              
+              const SizedBox(height: 23),
+              Wrap(
+                children: [
+                  CustomContainer(
+                    image: "assets/img/setern.png",
+                    text: "خزان ماء 800 لتر",
+                    tap: () {},
+                  ),
+                const SizedBox(width:  8),
+                  
+                  CustomContainer(
+                    image: "assets/img/setern.png",
+                    text: "خزان ماء 1000 لتر",
+                    tap: () {},
+                  ),
+                  const SizedBox(width:  8),
+                    CustomContainer(
+                    image: "assets/img/setern.png",
+                    text: "خزان ماء 3000 لتر",
+                    tap: () {},
+                  ),
+
+                ],
+              )
             ],
           ),
         ),

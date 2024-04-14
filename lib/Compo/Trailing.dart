@@ -9,7 +9,7 @@ class Trailing extends StatelessWidget {
     (width: 120,
     //height: 40,
     decoration: BoxDecoration(
-      borderRadius: BorderRadius.circular(0)
+      borderRadius: BorderRadius.circular(10)
 ),
       child: MaterialButton(
         
@@ -17,7 +17,7 @@ class Trailing extends StatelessWidget {
       color: const Color.fromARGB(255, 95, 8, 216),
       child: const Row(
         children: [
-          Icon(Icons.add,color: Colors.white,),
+          Icon(Icons.add,color: Colors.white),
           SizedBox(width: 5,),
           Text("Souscrire",style: TextStyle(
             color: Colors.white,
