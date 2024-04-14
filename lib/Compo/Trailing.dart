@@ -14,7 +14,8 @@ class Trailing extends StatelessWidget {
       child: MaterialButton(
         
       onPressed: (){},
-      child: Row(
+      color: const Color.fromARGB(255, 95, 8, 216),
+      child: const Row(
         children: [
           Icon(Icons.add,color: Colors.white,),
           SizedBox(width: 5,),
@@ -27,7 +28,6 @@ class Trailing extends StatelessWidget {
         ],
       
       ),
-      color: Color.fromARGB(255, 95, 8, 216),
       
       ),
     );

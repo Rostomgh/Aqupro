@@ -114,7 +114,7 @@ class _SignUpPState extends State<SignUp> {
                           email: email.text,
                           password: password.text,
                         );
-                        Navigator.pushReplacementNamed(context, 'hm');
+                        Navigator.pushReplacementNamed(context, 'Sign In');
                       } on FirebaseAuthException catch (e) {
                         if (e.code == 'weak-password') {
                           print('The password provided is too weak.');

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class CustomContainer extends StatelessWidget {
-  const CustomContainer({Key? key, required this.text, required this.image, this.tap});
+  const CustomContainer({super.key,  required this.text, required this.image, this.tap});
 
   final String text;
   final String image;
@@ -12,20 +12,20 @@ class CustomContainer extends StatelessWidget {
     return InkWell(
       onTap:tap ,
       child: Container(
-        height: 155,
-        width: 108,
+        height:300,
+        width:double.infinity,
         decoration: BoxDecoration(
           border: Border.all(
             color: const Color.fromARGB(115, 65, 60, 60),
           ),
           borderRadius: BorderRadius.circular(5),
-          color: Colors.white,
+          color: const Color.fromARGB(255, 255, 255, 255),
         ),
         child: Column(
           children: [
             Image.asset(image),
-            SizedBox(height: 9),
-            Text(text, textDirection: TextDirection.rtl),
+            const SizedBox(height: 9),
+            Text(text, textDirection: TextDirection.rtl,style: const TextStyle(fontSize: 30,fontWeight: FontWeight.bold),),
           ],
         ),
       ),
