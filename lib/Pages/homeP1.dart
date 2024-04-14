@@ -34,7 +34,7 @@ class Homm extends StatelessWidget {
           )
         ],
       ),
-      body:  SingleChildScrollView(
+      body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(7.0),
           child: Column(
@@ -60,22 +60,26 @@ class Homm extends StatelessWidget {
                   CustomContainer(
                     image: "assets/img/setern.png",
                     text: "خزان ماء 800 لتر",
-                    tap: () {},
+                    tap: () {
+                      Navigator.pushNamed(context, 'Home');
+                    },
                   ),
-                const SizedBox(width:  8),
-                  
+                  const SizedBox(width: 8),
                   CustomContainer(
                     image: "assets/img/setern.png",
                     text: "خزان ماء 1000 لتر",
-                    tap: () {},
+                    tap: () {
+                      Navigator.pushNamed(context, 'Home');
+                    },
                   ),
-                  const SizedBox(width:  8),
-                    CustomContainer(
+                  const SizedBox(width: 8),
+                  CustomContainer(
                     image: "assets/img/setern.png",
                     text: "خزان ماء 3000 لتر",
-                    tap: () {},
+                    tap: () {
+                      Navigator.pushNamed(context, 'Home');
+                    },
                   ),
-
                 ],
               )
             ],

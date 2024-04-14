@@ -1,7 +1,7 @@
 import 'package:aquapro/Login/Log.dart';
 import 'package:aquapro/Login/Login.dart';
 import 'package:aquapro/NavBar.dart';
-import 'package:aquapro/Pages/HomeP.dart';
+import 'package:aquapro/Pages/Gmap.dart';
 import 'package:aquapro/Pages/homeP1.dart';
 import 'package:aquapro/Route/ErrorRoute.dart';
 
@@ -15,14 +15,14 @@ class AppRouter {
       case 'Sign Up':
         return MaterialPageRoute(builder: (_) => const SignUp());
       case 'Home':
-        return MaterialPageRoute(builder: (_) => HomePage());
+        return MaterialPageRoute(builder: (_) => const Gmap());
       case 'hm':
-        return MaterialPageRoute(builder: (_) => Homm());
+        return MaterialPageRoute(builder: (_) =>const  Homm());
       case 'NavBar':
-        return MaterialPageRoute(builder: (_) => NavBar());
+        return MaterialPageRoute(builder: (_) => const NavBar());
 
           default:
-        return MaterialPageRoute(builder: (_) => ErrorRoute());
+        return MaterialPageRoute(builder: (_) =>const  ErrorRoute());
     }
   }
 }
