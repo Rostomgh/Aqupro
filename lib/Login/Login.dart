@@ -81,7 +81,7 @@ class _LoginPState extends State<LoginP> {
                               .signInWithEmailAndPassword(
                                   email: email.text,
                                   password: password.text);
-                          Navigator.pushReplacementNamed(context, 'hm');
+                          Navigator.pushReplacementNamed(context, 'NavBar');
                         } on FirebaseAuthException catch (e) {
                           if (e.code == 'user-not-found') {
                             print('No user found for that email.');
