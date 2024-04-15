@@ -18,7 +18,7 @@ class Homm extends StatelessWidget {
         title: const Text(
           "AQUAPRP",
           style: TextStyle(
-              fontSize: 20, fontWeight: FontWeight.w400, color: Colors.white),
+              fontSize: 20, fontWeight: FontWeight.w600, color: Colors.white),
         ),
         centerTitle: true,
         actions: [

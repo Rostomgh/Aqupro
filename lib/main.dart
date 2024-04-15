@@ -13,16 +13,15 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  Platform.isAndroid? await Firebase.initializeApp(
-    options: const FirebaseOptions(
-      apiKey: 'AIzaSyASg7XmMHB8nCvbIf0tEWP0eRwTTMypsbg',
-      appId: '1:80637747197:android:afbcea98aa02e21e8d8394',
-      messagingSenderId: '80637747197', 
-      projectId: 'aquapro-dd265'
-      )
-
-
-  )  : await Firebase.initializeApp();
+  WidgetsFlutterBinding.ensureInitialized();
+  Platform.isAndroid
+      ? await Firebase.initializeApp(
+          options: const FirebaseOptions(
+              apiKey: 'AIzaSyASg7XmMHB8nCvbIf0tEWP0eRwTTMypsbg',
+              appId: '1:80637747197:android:afbcea98aa02e21e8d8394',
+              messagingSenderId: '80637747197',
+              projectId: 'aquapro-dd265'))
+      : await Firebase.initializeApp();
   runApp(const MyApp());
 }
 
@@ -53,8 +52,10 @@ class _MyAppState extends State<MyApp> {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         theme: ThemeData.light(useMaterial3: true),
-        home:FirebaseAuth.instance.currentUser==null?  const FirstP():const NavBar(),
-       onGenerateRoute:(settings) =>  AppRouter ().OngenerateRoute(settings),
+        home: FirebaseAuth.instance.currentUser == null
+            ? const FirstP()
+            : const NavBar(),
+        onGenerateRoute: (settings) => AppRouter().OngenerateRoute(settings),
       ),
     );
   }

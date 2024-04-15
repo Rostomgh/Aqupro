@@ -1,7 +1,7 @@
 import 'package:aquapro/Buissnes%20Logic/NavBar/nav_bar_bloc.dart';
 import 'package:aquapro/Compo/Constance.dart';
 import 'package:aquapro/Compo/ListItem.dart';
-import 'package:aquapro/Pages/ProfilePage.dart';
+import 'package:aquapro/Pages/ProfileScreen/ProfilePage.dart';
 import 'package:aquapro/Pages/homeP1.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
@@ -15,7 +15,7 @@ List<BottomNavigationBarItem> navItems = [
 
 List<Widget> bottomNavScreens = [
   const Homm(),
-  const ProfilePage()
+const ProfilePage(),
 ];
 
 class NavBar extends StatelessWidget {

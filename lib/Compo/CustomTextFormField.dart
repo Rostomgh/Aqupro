@@ -5,13 +5,16 @@ class CustomText extends StatelessWidget {
   final TextEditingController mycontroller;
   final String label;
   final bool obc;
+  final String? hint;
   final String? Function(String?)? validator;
 
-  const CustomText(
+  const  CustomText(
       {super.key,
+      this.hint,
       required this.mycontroller,
       required this.label,
-      required this.obc, required this.validator});
+      required this.obc,
+      required this.validator});
 
   @override
   Widget build(BuildContext context) {
@@ -28,6 +31,7 @@ class CustomText extends StatelessWidget {
               contentPadding:
                   const EdgeInsets.symmetric(horizontal: 15, vertical: 8),
               label: Text(label),
+              hintText: hint,
               labelStyle: const TextStyle(
                   fontWeight: FontWeight.w300,
                   color: Colors.white,
