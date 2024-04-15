@@ -14,7 +14,7 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const LoginP());
       case 'Sign Up':
         return MaterialPageRoute(builder: (_) => const SignUp());
-      case 'Home':
+      case 'Gmap':
         return MaterialPageRoute(builder: (_) => const Gmap());
       case 'hm':
         return MaterialPageRoute(builder: (_) =>const  Homm());

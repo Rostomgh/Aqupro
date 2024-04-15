@@ -61,7 +61,7 @@ class Homm extends StatelessWidget {
                     image: "assets/img/setern.png",
                     text: "خزان ماء 800 لتر",
                     tap: () {
-                      Navigator.pushNamed(context, 'Home');
+                      Navigator.pushNamed(context, 'Gmap');
                     },
                   ),
                   const SizedBox(width: 8),
@@ -69,7 +69,7 @@ class Homm extends StatelessWidget {
                     image: "assets/img/setern.png",
                     text: "خزان ماء 1000 لتر",
                     tap: () {
-                      Navigator.pushNamed(context, 'Home');
+                      Navigator.pushNamed(context, 'Gmap');
                     },
                   ),
                   const SizedBox(width: 8),
@@ -77,7 +77,7 @@ class Homm extends StatelessWidget {
                     image: "assets/img/setern.png",
                     text: "خزان ماء 3000 لتر",
                     tap: () {
-                      Navigator.pushNamed(context, 'Home');
+                      Navigator.pushNamed(context, 'Gmap');
                     },
                   ),
                 ],
