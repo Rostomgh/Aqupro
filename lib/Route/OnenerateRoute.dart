@@ -1,3 +1,4 @@
+import 'package:aquapro/Widget/CustomCreditCard.dart';
 import 'package:aquapro/Login/Log.dart';
 import 'package:aquapro/Login/Login.dart';
 import 'package:aquapro/NavBar.dart';
@@ -23,6 +24,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const NavBar());
       case 'info':
         return MaterialPageRoute(builder: (_) => const InfoPersoP());
+      case 'Card':
+        return MaterialPageRoute(builder: (_) => const CustomCreditCard());
 
       default:
         return MaterialPageRoute(builder: (_) => const ErrorRoute());

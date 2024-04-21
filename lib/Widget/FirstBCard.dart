@@ -11,7 +11,7 @@ class FistBuildCard extends StatefulWidget {
 class _FistBuildCardState extends State<FistBuildCard> {
   @override
   Widget build(BuildContext context) {
-    return  Column(
+    return Column(
       children: [
         CustomCardProfilePage(
           ic: const Icon(Icons.account_box_outlined),
@@ -23,10 +23,14 @@ class _FistBuildCardState extends State<FistBuildCard> {
         const CustomCardProfilePage(
           ic: Icon(Icons.diamond),
           text: "Aquapro Fidélité",
+        
         ),
-        const CustomCardProfilePage(
-          ic: Icon(Icons.card_travel),
+         CustomCardProfilePage(
+          ic: const Icon(Icons.card_travel),
           text: "Méthodes de paiement ",
+            tap: () {
+            Navigator.pushNamed(context, 'Card');
+          },
         ),
       ],
     );

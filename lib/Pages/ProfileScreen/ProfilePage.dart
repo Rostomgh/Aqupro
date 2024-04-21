@@ -1,7 +1,7 @@
 import 'package:aquapro/Compo/Constance.dart';
-import 'package:aquapro/Compo/CustomSettings.dart';
+
 import 'package:aquapro/Widget/SecondBCard.dart';
-import 'package:aquapro/Pages/homeP1.dart';
+
 import 'package:aquapro/Widget/FirstBCard.dart';
 import 'package:flutter/material.dart';
 
@@ -19,6 +19,7 @@ class _ProfilePageState extends State<ProfilePage> {
       appBar: AppBar(
         elevation: 3,
         leading: CircleAvatar(
+          
           child: Image.asset("assets/avatar/ProfileAvatar.jpg"),
         ),
         title: const Column(
@@ -34,15 +35,7 @@ class _ProfilePageState extends State<ProfilePage> {
             )
           ],
         ),
-        actions: [
-          IconButton(
-            onPressed: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => const Homm()));
-            },
-            icon: const Icon(Icons.backspace),
-          )
-        ],
+      
       ),
       body: const SingleChildScrollView(
         child: Padding(
