@@ -74,10 +74,10 @@ class _InfoPersoPState extends State<InfoPersoP> {
                 ),
                 const SizedBox(height: 10),
                 EInput,
-                EditInput(
+                /*EditInput(
                   hint: "ros@gmail.com",
                   mycontroller: email,
-                ),
+                ),*/
               ]),
         ),
       ),
