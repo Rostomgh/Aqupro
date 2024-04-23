@@ -20,10 +20,10 @@ class _SecondBuildCardState extends State<SecondBuildCard> {
         CustomCardProfilePage(ic: Icon(Icons.history), text: "Historique"),
         CustomCardProfilePage(
           ic: Icon(Icons.language),
-          text: "Languge",
+          text: "Langue",
         ),
         SizedBox(height: 40),
-        Text("Aquapro . Version 1.0.0",style: TextStyle(fontSize: 20),)
+        Text("Aquapro . Version 1.0.0",style: TextStyle(fontSize: 20),),
         
       ],
     );

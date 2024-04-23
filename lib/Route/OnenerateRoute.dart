@@ -1,3 +1,4 @@
+import 'package:aquapro/Pages/ProfileScreen/LanguePage.dart';
 import 'package:aquapro/Widget/CustomCreditCard.dart';
 import 'package:aquapro/Login/Log.dart';
 import 'package:aquapro/Login/Login.dart';
@@ -26,6 +27,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const InfoPersoP());
       case 'Card':
         return MaterialPageRoute(builder: (_) => const CustomCreditCard());
+      case 'Langue':
+        return MaterialPageRoute(builder: (_) => const LanguePage());
 
       default:
         return MaterialPageRoute(builder: (_) => const ErrorRoute());
