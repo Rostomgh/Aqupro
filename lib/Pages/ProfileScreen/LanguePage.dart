@@ -1,5 +1,4 @@
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
 
 class LanguePage extends StatefulWidget {
   const LanguePage({super.key});
@@ -11,6 +10,14 @@ class LanguePage extends StatefulWidget {
 class _LanguePageState extends State<LanguePage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return const Scaffold(
+      body: Column(
+        children: [
+          Text("English"),
+          Text("Francais"),
+          
+        ],
+      ),
+    );
   }
 }
