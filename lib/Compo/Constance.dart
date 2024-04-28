@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 
 String tit = '';
+const CardColor = Color.fromARGB(0, 32, 2, 37);
 const Primerycolor = Color.fromARGB(255, 112, 180, 236);
 const Butcolor = Color(0xFFBDBDBD);
 const SizeText = SizedBox(height: 5);

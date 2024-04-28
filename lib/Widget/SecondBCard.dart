@@ -1,4 +1,6 @@
 import 'package:aquapro/Compo/CustomSettings.dart';
+import 'package:aquapro/Login/Login.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 class SecondBuildCard extends StatefulWidget {
@@ -11,24 +13,34 @@ class SecondBuildCard extends StatefulWidget {
 class _SecondBuildCardState extends State<SecondBuildCard> {
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       children: [
-        CustomCardProfilePage(
+        const CustomCardProfilePage(
           ic: Icon(Icons.text_decrease),
           text: "Termes et Conditions",
         ),
-        CustomCardProfilePage(ic: Icon(Icons.history), text: "Historique"),
-        CustomCardProfilePage(
+        const CustomCardProfilePage(
+            ic: Icon(Icons.history), text: "Historique"),
+        const CustomCardProfilePage(
           ic: Icon(Icons.language),
           text: "Langue",
         ),
-          CustomCardProfilePage(
+        CustomCardProfilePage(
           ic: Icon(Icons.exit_to_app),
+          tap: () async {
+            await FirebaseAuth.instance.signOut();
+            Navigator.of(context).pushAndRemoveUntil(
+              MaterialPageRoute(builder: (context) => const LoginP()),
+              (route) => false,
+            );
+          },
           text: "Déconnecter",
         ),
-        SizedBox(height: 40),
-        Text("Aquapro . Version 1.0.0",style: TextStyle(fontSize: 20),),
-        
+        const SizedBox(height: 40),
+        const Text(
+          "Aquapro . Version 1.0.0",
+          style: TextStyle(fontSize: 20),
+        ),
       ],
     );
   }

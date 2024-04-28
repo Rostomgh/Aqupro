@@ -6,22 +6,22 @@ class Trailing extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container
-    (width: 120,
-    //height: 40,
+    (width: 140,
+    height: 40,
     decoration: BoxDecoration(
       borderRadius: BorderRadius.circular(10)
 ),
       child: MaterialButton(
         
       onPressed: (){},
-      color: const Color.fromARGB(255, 95, 8, 216),
+      color: Color.fromARGB(255, 94, 26, 189),
       child: const Row(
         children: [
-          Icon(Icons.add,color: Colors.white),
+          Icon(Icons.add,color: Colors.white,size: 25,),
           SizedBox(width: 5,),
           Text("Souscrire",style: TextStyle(
             color: Colors.white,
-            fontSize: 13,
+            fontSize: 17,
             
           ),)
           

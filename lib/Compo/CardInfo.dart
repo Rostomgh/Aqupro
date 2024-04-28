@@ -7,24 +7,24 @@ class CustomCardInfo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const SizedBox(
-      height: 100,
+      height: 107,
       child: Card(
-        color: Color.fromARGB(255, 35, 2, 41),
+        color: Color.fromARGB(255, 60, 12, 68),
         child: ListTile(
           title: Text(
             "Aquapro Pay",
-            style: TextStyle(color: Colors.white,fontSize: 17),
+            style: TextStyle(color: Colors.white,fontSize: 20),
           ),
           
           subtitle: SizedBox(
-            height: 50,
+            height: 64,
             child: Row(
               children: [
                 Icon(Icons.remove_red_eye_sharp, color: Colors.white),
                 SizedBox(width: 5),
                 Text(
                   "0 DZD",
-                  style: TextStyle(color: Colors.white, fontSize: 18),
+                  style: TextStyle(color: Colors.white, fontSize: 22),
                 ),
               ],
             ),
