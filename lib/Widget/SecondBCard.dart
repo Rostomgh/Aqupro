@@ -19,8 +19,12 @@ class _SecondBuildCardState extends State<SecondBuildCard> {
           ic: Icon(Icons.text_decrease),
           text: "Termes et Conditions",
         ),
-        const CustomCardProfilePage(
-            ic: Icon(Icons.history), text: "Historique"),
+        CustomCardProfilePage(
+            tap: () {
+              Navigator.pushNamed(context, 'Historique');
+            },
+            ic: Icon(Icons.history),
+            text: "Historique"),
         const CustomCardProfilePage(
           ic: Icon(Icons.language),
           text: "Langue",
