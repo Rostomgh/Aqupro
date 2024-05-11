@@ -23,12 +23,11 @@ class _FistBuildCardState extends State<FistBuildCard> {
         const CustomCardProfilePage(
           ic: Icon(Icons.diamond),
           text: "Aquapro Fidélité",
-        
         ),
-         CustomCardProfilePage(
+        CustomCardProfilePage(
           ic: const Icon(Icons.card_travel),
           text: "Méthodes de paiement ",
-            tap: () {
+          tap: () {
             Navigator.pushNamed(context, 'Card');
           },
         ),

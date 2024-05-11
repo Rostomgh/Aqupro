@@ -22,7 +22,7 @@ class EditInput extends StatelessWidget {
             contentPadding:
                       const EdgeInsets.symmetric(horizontal: 15, vertical: 8),
             hintText: hint,
-            hintStyle: const TextStyle(fontSize: 14,
+            hintStyle: const TextStyle(fontSize: 15,
             fontWeight: FontWeight.w500,
             color: Colors.black
             ),

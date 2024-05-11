@@ -18,9 +18,11 @@ class _ProfilePageState extends State<ProfilePage> {
     return Scaffold(
       appBar: AppBar(
         elevation: 3,
-        leading: CircleAvatar(
-          
-          child: Image.asset("assets/avatar/ProfileAvatar.jpg"),
+        leading: Padding(
+          padding: const EdgeInsets.all(4.0),
+          child: CircleAvatar(
+            child: Image.asset("assets/avatar/av11.png"),
+          ),
         ),
         title: const Column(
           children: [
@@ -28,19 +30,14 @@ class _ProfilePageState extends State<ProfilePage> {
               "Aristoo",
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 23),
             ),
-            SizedBox(height: 2),
-            Text(
-              "099847652",
-              style: TextStyle(fontSize: 15),
-            )
           ],
         ),
-      
       ),
       body: const SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.all(8.0),
+          padding: EdgeInsets.all(10.0),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               SizedBox(
                 height: 30,
@@ -48,11 +45,10 @@ class _ProfilePageState extends State<ProfilePage> {
               Tit,
               SizedBox(height: 10),
               FistBuildCard(),
-              SizedBox(height:13),
+              SizedBox(height: 19),
               Tit2,
               SizedBox(height: 10),
               SecondBuildCard(),
-
             ],
           ),
         ),

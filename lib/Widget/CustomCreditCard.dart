@@ -1,4 +1,5 @@
 import 'package:aquapro/Compo/Constance.dart';
+import 'package:aquapro/Compo/CustomButton.dart';
 import 'package:flutter/material.dart';
 //import 'package:flutter_credit_card/credit_card_brand.dart';
 import 'package:flutter_credit_card/flutter_credit_card.dart';
@@ -35,7 +36,7 @@ class CustomCreditCardState extends State<CustomCreditCard> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.grey[200],
       appBar: AppBar(
         backgroundColor: Colors.white,
         title: const Text(
@@ -47,10 +48,7 @@ class CustomCreditCardState extends State<CustomCreditCard> {
       resizeToAvoidBottomInset: true,
       body: Container(
         decoration: const BoxDecoration(
-          /*  image: DecorationImage(
-              image: ExactAssetImage('assets/Card/bg.png'),
-              fit: BoxFit.fill,
-            ),*/
+          
           color: Colors.white,
         ),
         child: SafeArea(
@@ -122,33 +120,11 @@ class CustomCreditCardState extends State<CustomCreditCard> {
                         onCreditCardModelChange: onCreditCardModelChange,
                       ),
                       const SizedBox(
-                        height: 20,
+                        height: 10,
                       ),
+                      const CustomButton(gradientColors: ButtonColor,text: 'Valider',),
                       const SizedBox(
-                        height: 20,
-                      ),
-                      GestureDetector(
-                        onTap: _onValidate,
-                        child: Container(
-                          margin: const EdgeInsets.symmetric(
-                              horizontal: 16, vertical: 8),
-                          decoration: BoxDecoration(
-                            color: Primerycolor,
-                            borderRadius: BorderRadius.circular(8),
-                          ),
-                          padding: const EdgeInsets.symmetric(vertical: 15),
-                          width: double.infinity,
-                          alignment: Alignment.center,
-                          child: const Text(
-                            'Validate',
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontFamily: 'halter',
-                              fontSize: 14,
-                              package: 'flutter_credit_card',
-                            ),
-                          ),
-                        ),
+                        height: 10,
                       ),
                     ],
                   ),

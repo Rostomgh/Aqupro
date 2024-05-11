@@ -29,7 +29,7 @@ class Homm extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const SizedBox(height: 20),
+            const SizedBox(height: 2),
             const CustomCardInfo(),
             const SizedBox(height: 20),
             const Text(
@@ -43,14 +43,14 @@ class Homm extends StatelessWidget {
             const SizedBox(height: 5),
             const Text(
               "Nous sommes là pour te rendre la vie facile.",
-              style: TextStyle(fontSize: 16, fontWeight: FontWeight.w300),
+              style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400),
             ),
             const SizedBox(height: 23),
             Row(
               children: [
                 CustomContainer(
                   image: "assets/img/setern.png",
-                  text: "خزان ماء 800 لتر",
+                  text: " 800 litres",
                   tap: () {
                     Navigator.pushNamed(context, 'Gmap');
                   },
@@ -58,7 +58,7 @@ class Homm extends StatelessWidget {
                 const SizedBox(width: 8),
                 CustomContainer(
                   image: "assets/img/setern.png",
-                  text: "خزان ماء 1000 لتر",
+                  text: " 1000 litres",
                   tap: () {
                     Navigator.pushNamed(context, 'Gmap');
                   },
@@ -66,7 +66,7 @@ class Homm extends StatelessWidget {
                 const SizedBox(width: 8),
                 CustomContainer(
                   image: "assets/img/setern.png",
-                  text: "خزان ماء 3000 لتر",
+                  text: " 3000 litres",
                   tap: () {
                     Navigator.pushNamed(context, 'Gmap');
                   },
@@ -74,7 +74,8 @@ class Homm extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 20),
-            const CodePromoSection(),
+            CodePromoSection(),
+          
           ],
         ),
       ),

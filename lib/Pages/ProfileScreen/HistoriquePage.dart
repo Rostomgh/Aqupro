@@ -15,14 +15,14 @@ class _HistoriquePageState extends State<HistoriquePage> {
     return Scaffold(
         backgroundColor: const Color.fromARGB(255, 239, 236, 236),
         appBar: AppBar(
-          title: Text('HISQTORIQUE'),
-          centerTitle: true,
-          elevation: 5,
-          backgroundColor: Primerycolor,
+          title: Text('Historique',  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),),
+          centerTitle: true,  
+          backgroundColor: Colors.white,
+      
         ),
         body: const SafeArea(
           child: SingleChildScrollView(
-            child: CustomCardHistorique(),
+            child: CustomCardHistorique(Prix:'120' ,date:'11 may 1990' ,),
           ),
         ));
   }

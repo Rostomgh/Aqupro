@@ -25,7 +25,7 @@ class CustomContainer extends StatelessWidget {
           children: [
             Image.asset(image),
             const SizedBox(height: 9),
-            Text(text, textDirection: TextDirection.rtl,),
+            Text(text, textDirection: TextDirection.rtl,style: const TextStyle(fontWeight: FontWeight.w400,fontSize: 20),),
           ],
         ),
       ),

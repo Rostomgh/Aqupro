@@ -44,13 +44,17 @@ class _InfoPersoPState extends State<InfoPersoP> {
                   ),
                 ),
                 const SizedBox(height: 12),
-                const Text(
-                  "Information",
-                  style: TextStyle(
-                    color: Colors.black54,
-                      fontWeight: FontWeight.w500,
-                      fontSize: 20,
-                      decoration: TextDecoration.underline),
+                const Padding(
+                  padding: EdgeInsets.all(8.0),
+                  child: Text(
+                    "Information",
+                    style: TextStyle(
+                      color: Colors.black54,
+                        fontWeight: FontWeight.w700,
+                        fontSize: 20,
+                        decoration: TextDecoration.underline
+                        ),
+                  ),
                 ),
                 const SizedBox(
                   height: 20,
