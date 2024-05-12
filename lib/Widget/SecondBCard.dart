@@ -1,5 +1,5 @@
 import 'package:aquapro/Compo/CustomSettings.dart';
-import 'package:aquapro/Login/Login.dart';
+import 'package:aquapro/Auth/Login.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 

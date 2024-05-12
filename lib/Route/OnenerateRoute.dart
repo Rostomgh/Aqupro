@@ -1,8 +1,8 @@
 import 'package:aquapro/Pages/ProfileScreen/HistoriquePage.dart';
 import 'package:aquapro/Pages/ProfileScreen/LanguePage.dart';
 import 'package:aquapro/Widget/CustomCreditCard.dart';
-import 'package:aquapro/Login/Log.dart';
-import 'package:aquapro/Login/Login.dart';
+import 'package:aquapro/Auth/Log.dart';
+import 'package:aquapro/Auth/Login.dart';
 import 'package:aquapro/NavBar.dart';
 import 'package:aquapro/Pages/Gmap.dart';
 import 'package:aquapro/Pages/ProfileScreen/InfoPerso.dart';
