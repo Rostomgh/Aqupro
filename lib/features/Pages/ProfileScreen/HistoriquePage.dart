@@ -1,5 +1,5 @@
-import 'package:aquapro/Compo/Constance.dart';
-import 'package:aquapro/Compo/CustomCardHistorique.dart';
+
+import 'package:aquapro/core/Compo/CustomCardHistorique.dart';
 import 'package:flutter/material.dart';
 
 class HistoriquePage extends StatefulWidget {

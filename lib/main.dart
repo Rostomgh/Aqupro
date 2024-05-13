@@ -2,14 +2,17 @@ import 'dart:io';
 
 import 'package:aquapro/Buissnes%20Logic/NavBar/nav_bar_bloc.dart';
 import 'package:aquapro/LogoP.dart';
-import 'package:aquapro/NavBar.dart';
+
 //import 'package:aquapro/Compo/Chekbox.dart';
-import 'package:aquapro/Route/OnenerateRoute.dart';
+
+import 'package:aquapro/core/NavBar.dart';
+import 'package:aquapro/core/Route/OnenerateRoute.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 //import 'package:aquapro/Pages/ListTitle.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -49,14 +52,21 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return BlocProvider(
       create: (context) => NavBarBloc(),
-      child: MaterialApp(
-        debugShowCheckedModeBanner: false,
-        theme: ThemeData.light(useMaterial3: true),
-        home: FirebaseAuth.instance.currentUser == null
-            ? const FirstP()
-            : const NavBar(),
-        onGenerateRoute: (settings) => AppRouter().OngenerateRoute(settings),
-      ),
+      child: ScreenUtilInit(
+          designSize: const Size(360, 690),
+          minTextAdapt: true,
+          splitScreenMode: true,
+          builder: (_, child) {
+            return MaterialApp(
+              debugShowCheckedModeBanner: false,
+              theme: ThemeData.light(useMaterial3: true),
+              home: FirebaseAuth.instance.currentUser == null
+                  ? const FirstP()
+                  : const NavBar(),
+              onGenerateRoute: (settings) =>
+                  AppRouter().OngenerateRoute(settings),
+            );
+          }),
     );
   }
 }

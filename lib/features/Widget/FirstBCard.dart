@@ -1,4 +1,5 @@
-import 'package:aquapro/Compo/CustomSettings.dart';
+
+import 'package:aquapro/core/Compo/CustomSettings.dart';
 import 'package:flutter/material.dart';
 
 class FistBuildCard extends StatefulWidget {

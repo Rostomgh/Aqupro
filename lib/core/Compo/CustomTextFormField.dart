@@ -1,4 +1,5 @@
-import 'package:aquapro/Compo/Constance.dart';
+
+import 'package:aquapro/core/Compo/Constance.dart';
 import 'package:flutter/material.dart';
 
 class CustomText extends StatelessWidget {

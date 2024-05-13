@@ -1,8 +1,7 @@
-import 'package:aquapro/Compo/Constance.dart';
 
-import 'package:aquapro/Widget/SecondBCard.dart';
-
-import 'package:aquapro/Widget/FirstBCard.dart';
+import 'package:aquapro/core/Compo/Constance.dart';
+import 'package:aquapro/features/Widget/FirstBCard.dart';
+import 'package:aquapro/features/Widget/SecondBCard.dart';
 import 'package:flutter/material.dart';
 
 class ProfilePage extends StatefulWidget {

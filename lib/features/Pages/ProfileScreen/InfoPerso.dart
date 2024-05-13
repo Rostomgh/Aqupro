@@ -1,7 +1,8 @@
 // ignore_for_file: body_might_complete_normally_nullable
 
-import 'package:aquapro/Compo/Constance.dart';
-import 'package:aquapro/Compo/CustomEditInput.dart';
+
+import 'package:aquapro/core/Compo/Constance.dart';
+import 'package:aquapro/core/Compo/CustomEditInput.dart';
 import 'package:flutter/material.dart';
 
 class InfoPersoP extends StatefulWidget {

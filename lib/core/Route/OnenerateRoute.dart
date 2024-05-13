@@ -1,14 +1,15 @@
-import 'package:aquapro/Pages/ProfileScreen/HistoriquePage.dart';
-import 'package:aquapro/Pages/ProfileScreen/LanguePage.dart';
-import 'package:aquapro/Widget/CustomCreditCard.dart';
-import 'package:aquapro/Auth/Log.dart';
-import 'package:aquapro/Auth/Login.dart';
-import 'package:aquapro/NavBar.dart';
-import 'package:aquapro/Pages/Gmap.dart';
-import 'package:aquapro/Pages/ProfileScreen/InfoPerso.dart';
-import 'package:aquapro/Pages/homeP1.dart';
-import 'package:aquapro/Route/ErrorRoute.dart';
 
+
+import 'package:aquapro/core/NavBar.dart';
+import 'package:aquapro/core/Route/ErrorRoute.dart';
+import 'package:aquapro/features/Auth/Log.dart';
+import 'package:aquapro/features/Auth/Login.dart';
+import 'package:aquapro/features/Pages/Gmap.dart';
+import 'package:aquapro/features/Pages/ProfileScreen/HistoriquePage.dart';
+import 'package:aquapro/features/Pages/ProfileScreen/InfoPerso.dart';
+import 'package:aquapro/features/Pages/ProfileScreen/LanguePage.dart';
+import 'package:aquapro/features/Pages/homeP1.dart';
+import 'package:aquapro/features/Widget/CustomCreditCard.dart';
 import 'package:flutter/material.dart';
 
 class AppRouter {

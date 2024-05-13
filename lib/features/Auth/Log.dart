@@ -1,6 +1,7 @@
-import 'package:aquapro/Compo/Constance.dart';
-import 'package:aquapro/Compo/CustomButton.dart';
-import 'package:aquapro/Compo/CustomTextFormField.dart';
+
+import 'package:aquapro/core/Compo/Constance.dart';
+import 'package:aquapro/core/Compo/CustomButton.dart';
+import 'package:aquapro/core/Compo/CustomTextFormField.dart';
 import 'package:awesome_dialog/awesome_dialog.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';

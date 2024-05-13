@@ -1,9 +1,10 @@
-import 'package:aquapro/Compo/Container.dart';
-import 'package:flutter/material.dart';
-import 'package:aquapro/Compo/CardInfo.dart';
-import 'package:aquapro/Compo/CodePromoSection.dart';
 
-import 'package:aquapro/Compo/Constance.dart';
+import 'package:aquapro/core/Compo/CardInfo.dart';
+import 'package:aquapro/core/Compo/CodePromoSection.dart';
+import 'package:aquapro/core/Compo/Constance.dart';
+import 'package:aquapro/core/Compo/Container.dart';
+import 'package:flutter/material.dart';
+
 
 class Homm extends StatelessWidget {
   const Homm({Key? key}) : super(key: key);

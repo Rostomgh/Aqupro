@@ -1,4 +1,5 @@
-import 'package:aquapro/Compo/Trailing.dart';
+
+import 'package:aquapro/core/Compo/Trailing.dart';
 import 'package:flutter/material.dart';
 
 class CustomCardInfo extends StatelessWidget {
