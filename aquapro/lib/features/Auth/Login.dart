@@ -1,9 +1,11 @@
-import 'package:aquapro/Compo/CustomButton.dart';
+
+import 'package:aquapro/core/Compo/Constance.dart';
+import 'package:aquapro/core/Compo/CustomButton.dart';
+import 'package:aquapro/core/Compo/CustomTextFormField.dart';
 import 'package:awesome_dialog/awesome_dialog.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:aquapro/Compo/Constance.dart';
-import 'package:aquapro/Compo/CustomText.dart';
+
 
 class LoginP extends StatefulWidget {
   const LoginP({Key? key}) : super(key: key);
@@ -81,7 +83,7 @@ class _LoginPState extends State<LoginP> {
                               .signInWithEmailAndPassword(
                                   email: email.text,
                                   password: password.text);
-                          Navigator.pushReplacementNamed(context, 'hm');
+                          Navigator.pushReplacementNamed(context, 'NavBar');
                         } on FirebaseAuthException catch (e) {
                           if (e.code == 'user-not-found') {
                             print('No user found for that email.');

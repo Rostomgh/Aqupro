@@ -1,3 +1,4 @@
+import 'package:aquapro/core/Compo/Constance.dart';
 import 'package:flutter/material.dart';
 
 class Trailing extends StatelessWidget {
@@ -6,28 +7,28 @@ class Trailing extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container
-    (width: 120,
-    //height: 40,
+    (width: 140,
+    height: 40,
     decoration: BoxDecoration(
-      borderRadius: BorderRadius.circular(0)
+      borderRadius: BorderRadius.circular(10)
 ),
       child: MaterialButton(
         
       onPressed: (){},
-      child: Row(
+      color: Color.fromARGB(255, 14, 97, 198),
+      child: const Row(
         children: [
-          Icon(Icons.add,color: Colors.white,),
+          Icon(Icons.add,color: Colors.white,size: 25,),
           SizedBox(width: 5,),
           Text("Souscrire",style: TextStyle(
             color: Colors.white,
-            fontSize: 13,
+            fontSize: 17,
             
           ),)
           
         ],
       
       ),
-      color: Color.fromARGB(255, 95, 8, 216),
       
       ),
     );

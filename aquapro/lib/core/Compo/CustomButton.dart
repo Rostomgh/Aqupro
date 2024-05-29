@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
 class CustomButton extends StatelessWidget {
-  final VoidCallback onPressed;
+  final VoidCallback? onPressed;
   final String text;
   final List<Color> gradientColors;
 
   const CustomButton({
     Key? key,
-    required this.onPressed,
+    this.onPressed,
     required this.text,
     required this.gradientColors,
   }) : super(key: key);

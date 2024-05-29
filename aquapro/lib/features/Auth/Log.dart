@@ -1,6 +1,7 @@
-import 'package:aquapro/Compo/Constance.dart';
-import 'package:aquapro/Compo/CustomButton.dart';
-import 'package:aquapro/Compo/CustomText.dart';
+
+import 'package:aquapro/core/Compo/Constance.dart';
+import 'package:aquapro/core/Compo/CustomButton.dart';
+import 'package:aquapro/core/Compo/CustomTextFormField.dart';
 import 'package:awesome_dialog/awesome_dialog.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -114,7 +115,7 @@ class _SignUpPState extends State<SignUp> {
                           email: email.text,
                           password: password.text,
                         );
-                        Navigator.pushReplacementNamed(context, 'hm');
+                        Navigator.pushReplacementNamed(context, 'Sign In');
                       } on FirebaseAuthException catch (e) {
                         if (e.code == 'weak-password') {
                           print('The password provided is too weak.');

@@ -1,5 +1,6 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
-import 'package:aquapro/Login/Login.dart';
+import 'package:aquapro/features/Auth/Login.dart';
+
 
 
 
