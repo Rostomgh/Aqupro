@@ -15,7 +15,11 @@ class Trailing extends StatelessWidget {
       child: MaterialButton(
         
       onPressed: (){},
+<<<<<<<< HEAD:aquapro/lib/core/Compo/Trailing.dart
       color: Color.fromARGB(255, 14, 97, 198),
+========
+      color: Color.fromARGB(255, 94, 26, 189),
+>>>>>>>> d2343d4acb6ee4b988b9e5e4a2df0a4aa6f03288:lib/core/Compo/Trailing.dart
       child: const Row(
         children: [
           Icon(Icons.add,color: Colors.white,size: 25,),

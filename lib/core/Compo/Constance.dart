@@ -8,25 +8,25 @@ const Primerycolor = Color.fromARGB(255, 112, 180, 236);
 const Butcolor = Color(0xFFBDBDBD);
 const SizeText = SizedBox(height: 5);
 const ButtonColor = [Colors.black54, Colors.black];
-const ContainerHomePage = Color.fromARGB(255, 16, 60, 113);
 
 const Tit = Column(
+  
   children: [
     Text(
       "Mon Compte",
       style: TextStyle(
-        fontWeight: FontWeight.bold,
-        fontSize: 20,
-      ),
+          fontWeight: FontWeight.bold,
+          fontSize: 20,
+          ),
     ),
   ],
 );
 const Tit2 = Text(
   "Plus d'options",
   style: TextStyle(
-    fontWeight: FontWeight.bold,
-    fontSize: 20,
-  ),
+      fontWeight: FontWeight.bold,
+      fontSize: 20,
+      ),
 );
 const FInput = Padding(
   padding: EdgeInsets.all(8.0),

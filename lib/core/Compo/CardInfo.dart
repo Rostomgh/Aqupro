@@ -1,5 +1,4 @@
 
-import 'package:aquapro/core/Compo/Constance.dart';
 import 'package:aquapro/core/Compo/Trailing.dart';
 import 'package:flutter/material.dart';
 
@@ -11,7 +10,7 @@ class CustomCardInfo extends StatelessWidget {
     return const SizedBox(
       height: 107,
       child: Card(
-        color: ContainerHomePage,
+        color: Color.fromARGB(255, 60, 12, 68),
         child: ListTile(
           title: Text(
             "Aquapro Pay",
