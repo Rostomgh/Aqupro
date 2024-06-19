@@ -6,7 +6,7 @@ import 'package:aquapro/LogoP.dart';
 //import 'package:aquapro/Compo/Chekbox.dart';
 
 import 'package:aquapro/core/NavBar.dart';
-import 'package:aquapro/core/Route/OnenerateRoute.dart';
+import 'package:aquapro/core/Router/OnenerateRoute.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 //import 'package:aquapro/Pages/ListTitle.dart';

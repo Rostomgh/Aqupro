@@ -1,7 +1,7 @@
 
 
 import 'package:aquapro/core/NavBar.dart';
-import 'package:aquapro/core/Route/ErrorRoute.dart';
+import 'package:aquapro/core/Router/ErrorRoute.dart';
 import 'package:aquapro/features/Auth/Log.dart';
 import 'package:aquapro/features/Auth/Login.dart';
 import 'package:aquapro/features/Pages/Gmap.dart';
