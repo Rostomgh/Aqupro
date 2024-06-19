@@ -16,16 +16,16 @@ class CustomCBottomSheet extends StatelessWidget {
           height: 10,
         ),
         CustomGrid(
-          image: 'assets/Clinc/Clinc.jpg',
-          Name: 'Clinic Name 1',
+          image: 'assets/img/camion.png',
+          Name: 'Rostom',
           adress: '123 Main St',
-          time: '9:00 AM - 5:00 PM',
+          matricule: '12234 113 05',
           number: '123-456-7890',
           ontap: () {},
         ),
-        SizedBox(height: 29),
+        const SizedBox(height: 29),
         Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-          Container(
+          SizedBox(
             height: 44,
             width: 125,
             child: MaterialButton(
@@ -48,7 +48,7 @@ class CustomCBottomSheet extends StatelessWidget {
             ),
           ),
           const SizedBox(width: AppSizes.sizebsheet),
-          Container(
+          SizedBox(
             height: 44,
             width: 125,
             child: MaterialButton(

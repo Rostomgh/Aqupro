@@ -9,7 +9,7 @@ class CustomGrid extends StatefulWidget {
   final String image;
   final String Name;
   final String adress;
-  final String time;
+  final String matricule;
   final String number;
   final void Function()? ontap;
 
@@ -18,7 +18,7 @@ class CustomGrid extends StatefulWidget {
     required this.image,
     required this.Name,
     required this.adress,
-    required this.time,
+    required this.matricule,
     required this.number,
     required this.ontap,
   });
@@ -69,15 +69,7 @@ class _CustomGridState extends State<CustomGrid> {
                             color: AppColors.black,
                           ),
                         ),
-                        const SizedBox(height: AppSizes.sizeColumn),
-                        const Text(
-                          'Clinic',
-                          style: TextStyle(
-                            fontSize: 17,
-                            fontWeight: FontWeight.w600,
-                            color: AppColors.black,
-                          ),
-                        ),
+                        
                         const SizedBox(height: AppSizes.sizeColumn),
                         Text(
                           widget.adress,
@@ -89,7 +81,7 @@ class _CustomGridState extends State<CustomGrid> {
                         ),
                         const SizedBox(height: AppSizes.sizeColumn),
                         Text(
-                          widget.time,
+                          widget.matricule ,
                           style: const TextStyle(
                             fontSize: 17,
                             fontWeight: FontWeight.w600,
