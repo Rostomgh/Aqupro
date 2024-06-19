@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 
 class EditInput extends StatelessWidget {
   final String hint;
-
   final TextEditingController mycontroller;
   const EditInput({Key? key, required this.mycontroller, required this.hint})
       : super(key: key);

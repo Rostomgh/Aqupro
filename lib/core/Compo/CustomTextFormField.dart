@@ -42,6 +42,7 @@ class CustomText extends StatelessWidget {
                   borderRadius: BorderRadius.circular(24),
                   borderSide: BorderSide(
                     color: Colors.black,
+                    
                   ))),
         ),
       ),

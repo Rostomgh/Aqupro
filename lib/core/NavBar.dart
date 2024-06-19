@@ -15,7 +15,7 @@ List<BottomNavigationBarItem> navItems = [
 ];
 
 List<Widget> bottomNavScreens = [
-  const Homm(),
+const Homm(),
 const ProfilePage(),
 ];
 
