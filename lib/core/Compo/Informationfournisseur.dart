@@ -18,7 +18,7 @@ class CustomCBottomSheet extends StatelessWidget {
         CustomGrid(
           image: 'assets/img/camion.png',
           Name: 'Rostom',
-          adress: '123 Main St',
+          adress: 'Kchida',
           matricule: '12234 113 05',
           number: '123-456-7890',
           ontap: () {},

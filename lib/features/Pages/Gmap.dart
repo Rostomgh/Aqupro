@@ -1,5 +1,6 @@
 import 'package:aquapro/core/Animation/BottomSheetAnimation.dart';
 import 'package:aquapro/core/Compo/Informationfournisseur.dart';
+import 'package:aquapro/core/Theme/AppColor.dart';
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
@@ -17,6 +18,10 @@ class Gmap extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('Map',style: TextStyle(color: AppColors.black),),
+        centerTitle: true,
+      ),
       body: Stack(
         children: [
           GoogleMap(

@@ -1,10 +1,9 @@
-
 import 'package:aquapro/core/Compo/CardInfo.dart';
 import 'package:aquapro/core/Compo/CodePromoSection.dart';
 import 'package:aquapro/core/Compo/Constance.dart';
 import 'package:aquapro/core/Compo/Container.dart';
 import 'package:flutter/material.dart';
-
+import 'package:flutter/widgets.dart';
 
 class Homm extends StatelessWidget {
   const Homm({Key? key}) : super(key: key);
@@ -47,36 +46,38 @@ class Homm extends StatelessWidget {
               style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400),
             ),
             const SizedBox(height: 23),
-            Row(
-              children: [
-                CustomContainer(
-                  image: "assets/img/setern.png",
-                  text: " 800 litres",
-                  tap: () {
-                    Navigator.pushNamed(context, 'Gmap');
-                  },
-                ),
-                const SizedBox(width: 8),
-                CustomContainer(
-                  image: "assets/img/setern.png",
-                  text: " 1000 litres",
-                  tap: () {
-                    Navigator.pushNamed(context, 'Gmap');
-                  },
-                ),
-                const SizedBox(width: 8),
-                CustomContainer(
-                  image: "assets/img/setern.png",
-                  text: " 3000 litres",
-                  tap: () {
-                    Navigator.pushNamed(context, 'Gmap');
-                  },
-                ),
-              ],
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: [
+                  CustomContainer(
+                    image: "assets/img/setern.png",
+                    text: " 800 litres",
+                    tap: () {
+                      Navigator.pushNamed(context, 'Gmap');
+                    },
+                  ),
+                  const SizedBox(width: 8),
+                  CustomContainer(
+                    image: "assets/img/setern.png",
+                    text: " 1000 litres",
+                    tap: () {
+                      Navigator.pushNamed(context, 'Gmap');
+                    },
+                  ),
+                  const SizedBox(width: 8),
+                  CustomContainer(
+                    image: "assets/img/setern.png",
+                    text: " 3000 litres",
+                    tap: () {
+                      Navigator.pushNamed(context, 'Gmap');
+                    },
+                  ),
+                ],
+              ),
             ),
             const SizedBox(height: 20),
             CodePromoSection(),
-          
           ],
         ),
       ),
