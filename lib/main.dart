@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:aquapro/Buissnes%20Logic/NavBar/nav_bar_bloc.dart';
+import 'package:aquapro/Buissnes%20Logic/geolocator/localisation_bloc.dart';
 import 'package:aquapro/LogoP.dart';
 
 //import 'package:aquapro/Compo/Chekbox.dart';
@@ -50,8 +51,15 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(
-      create: (context) => NavBarBloc(),
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider<LocalisationBloc>(
+          create: (context) => LocalisationBloc(),
+        ),
+        BlocProvider<NavBarBloc>(
+          create: (context) => NavBarBloc(),
+        ),
+      ],
       child: ScreenUtilInit(
           designSize: const Size(360, 690),
           minTextAdapt: true,

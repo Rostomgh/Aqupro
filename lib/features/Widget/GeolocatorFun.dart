@@ -1,5 +1,7 @@
 
 
+import 'package:geolocator/geolocator.dart';
+
 abstract class LocationService {
   static Future<Position> determinePosition() async {
     bool serviceEnabled;

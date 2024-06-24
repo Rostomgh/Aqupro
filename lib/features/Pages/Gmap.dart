@@ -1,43 +1,59 @@
-import 'package:aquapro/core/Animation/BottomSheetAnimation.dart';
-import 'package:aquapro/core/Compo/Informationfournisseur.dart';
-import 'package:aquapro/core/Theme/AppColor.dart';
+import 'package:aquapro/Buissnes%20Logic/geolocator/localisation_bloc.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 
-class Gmap extends StatelessWidget {
-  final double latitude;
-  final double longitude;
+class Gmap extends StatefulWidget {
+  const Gmap({super.key});
 
-  const Gmap({
-    super.key,
-    this.latitude = 37.43296265331129, // Default value
-    this.longitude = -122.08832357078792, // Default value
-  });
+  @override
+  State<Gmap> createState() => _GmapState();
+}
+
+class _GmapState extends State<Gmap> {
+  @override
+  void initState() {
+    super.initState();
+    // Initialize the localisation event
+    BlocProvider.of<LocalisationBloc>(context)
+        .add(GetLocalisation(latitude: 0.0, longitude: 0.0));
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Map',style: TextStyle(color: AppColors.black),),
-        centerTitle: true,
+      body: BlocBuilder<LocalisationBloc, LocalisationState>(
+        builder: (context, state) {
+          if (state is LocalisationGetting) {
+            final double latitude = state.latitude;
+            final double longitude = state.longitude;
+            print('Longitude: $longitude, Latitude: $latitude');
+            return GoogleMap(
+              myLocationButtonEnabled: true,
+              mapType: MapType.normal,
+              initialCameraPosition: CameraPosition(
+                target: LatLng(latitude, longitude),
+                zoom: 5,
+              ),
+            );
+          } else if (state is LocalisationError) {
+            return Center(
+              child: Text(state.message),
+            );
+          } else {
+            return const Center(
+              child: CircularProgressIndicator(),
+            );
+          }
+        },
       ),
-      body: Stack(
-        children: [
-          GoogleMap(
-            myLocationButtonEnabled: true,
-            mapType: MapType.normal,
-            initialCameraPosition: CameraPosition(
-              target: LatLng(latitude, longitude),
-              zoom: 5,
-            ),
-          ),
-          const Positioned.fill(
-            child: MyDraggableSheet(
-              child: CustomCBottomSheet(),
-            ),
-          ),
-        ],
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          BlocProvider.of<LocalisationBloc>(context)
+              .add(GetLocalisation(latitude: 0.0, longitude: 0.0));
+        },
+        child: const Icon(Icons.location_searching),
       ),
     );
   }
