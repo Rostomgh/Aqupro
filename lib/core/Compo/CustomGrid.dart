@@ -62,7 +62,7 @@ class _CustomGridState extends State<CustomGrid> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text(
-                          widget.Name,
+                          ("Nom: ${widget.Name}"),
                           style: const TextStyle(
                             fontSize: 17,
                             fontWeight: FontWeight.w600,
@@ -72,7 +72,7 @@ class _CustomGridState extends State<CustomGrid> {
                         
                         const SizedBox(height: AppSizes.sizeColumn),
                         Text(
-                          widget.adress,
+                          ('Address: ${widget.adress}'),
                           style: const TextStyle(
                             fontSize: 17,
                             fontWeight: FontWeight.w600,
@@ -81,7 +81,7 @@ class _CustomGridState extends State<CustomGrid> {
                         ),
                         const SizedBox(height: AppSizes.sizeColumn),
                         Text(
-                          widget.matricule ,
+                          ('Matricule: ${widget.matricule}'), 
                           style: const TextStyle(
                             fontSize: 17,
                             fontWeight: FontWeight.w600,
@@ -90,7 +90,7 @@ class _CustomGridState extends State<CustomGrid> {
                         ),
                         const SizedBox(height: AppSizes.sizeColumn),
                         Text(
-                          widget.number,
+                          ('Numiro: ${widget.number}'),
                           style: const TextStyle(
                             fontSize: 17,
                             fontWeight: FontWeight.w600,
